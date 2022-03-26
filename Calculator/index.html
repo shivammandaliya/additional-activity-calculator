@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>shivam's calculator</title>
+    <link rel="stylesheets" href="mystyles.css" />
+    <script src="calculator.js"></script>
+  </head>
+  <style>
+    button {
+      font-size: xx-large;
+      background-color: aqua;
+      margin: 5px;
+      padding: 10px;
+    }
+    label {
+      font-size: xx-large;
+    }
+    input {
+      size: xx-large;
+      margin: 10px;
+      padding: 10px;
+      font-size: medium;
+    }
+    span {
+      font-size: xx-large;
+    }
+  </style>
+  <body>
+    <h3>CALCULATOR</h3>
+    <form>
+      <label>1st Value:</label>
+      <input id="n1" type="number" />
+      <label>Enter Number:</label>
+      <input id="n" type="number" placeholder="Write a number to find square" style="width: 30%;" />
+    </form>
+    <form>
+      <label>2nd Value:</label>
+      <input id="n2" type="number" /> 
+      <button type="button" onclick="square()">calculate square</button>
+      <span>Result : </span><span id="ans"></span>
+    </form>
+    <form>
+      <button type="button" onclick="add()">+</button>
+      <button type="button" onclick="sub()">-</button>
+      <button type="button" onclick="divide()">/</button>
+      <button type="button" onclick="multiply()">*</button>
+    </form>
+    <span>Result : </span><span id="answer"></span>
+  </body>
+</html>
